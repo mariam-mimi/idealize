@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Idealize</title>
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="../script.js"></script>
+        <!-- font links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-------------------------------- nav bar --------------------------------------->
+        <header>
+            <nav>
+                <a class="nav-logo" href="index.html">Idealize</a>
+                <ul class="nav-list">
+                    <!-- create post -->
+                    <li>
+                        <a href="create-post.html"><img src="../svg/plus-solid.svg" class="nav-svg" title="Create Post"></a>
+                    </li>
+                    <!--coding club link (img)-->
+                    <!-- <li>
+                        <a href="https://wvcoding.org/" target="_blank"><img src="../svg/wvcc-logo.svg" class="nav-svg" title="West Virginia Coding Club"></a>
+                    </li>  -->
+                    <!--gihub link (img)-->
+                    <li>
+                        <a href="https://github.com/" target="_blank"><img src="../svg/github-brands.svg" class="nav-svg"></a>
+                    </li> 
+                    <!--notifications bell-->
+                    <li>
+                        <a href="notifications.html"><img src="../svg/bell-solid.svg" class="nav-svg"></a>
+                    </li> 
+                    <!--pfp-->
+                    <li>
+                        <div class="dropdown">
+                            <img src="../svg/circle-user-solid.svg" class="nav-svg dropbtn" onclick="myFunction()">
+                            <div class="dropdown-content" id="myDropdown">
+                              <a href="../html/view-profile.html">View Profile</a>
+                              <a href="../html/settings.html">Account Settings</a>
+                              <a href="#">Log-out</a>
+                            </div>
+                        </div> 
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="create-card">
+            <h1>Create Post</h1>
+            <div>
+                <label>Title:</label>
+                <input type="text">
+
+                <label>Text:</label>
+                <textarea></textarea>
+
+                <button class="create-post-btn">Create Post</button>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div>
+            <h1 class="footer-text nav-logo">Idealize</h1>
+            <p class="footer-text">Some text about the app and stuff.</p>
+        </div>
+        <div class="middle-footer">
+            <a href="#" class="footer-text">Terms and Conditions</a><br>
+            <a href="#" class="footer-text">Privacy Policy</a><br>
+            <a href="#" class="footer-text">About</a>
+        </div>
+        <div class="footer-svg">
+            <a href="https://github.com/" target="_blank"><img src="../svg/github-brands.svg" height="30px" width="30px"></a><br>
+            <a href="https://wvcoding.org/" target="_blank"><img src="../svg/wvcc-logo.svg" height="30px" width="30px" title="West Virginia Coding Club"></a>
+        </div>
+    </footer>
+</html>

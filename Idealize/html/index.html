@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Idealize</title>
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="../script.js"></script>
+        <!-- font links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-------------------------------- nav bar --------------------------------------->
+        <header>
+            <nav id="navbar">
+                <a class="nav-logo" href="index.html">Idealize</a>
+                <ul class="nav-list">
+
+                    <!-- create post -->
+                    <li>
+                        <a href="create-post.html"><img src="../svg/plus-solid.svg" class="nav-svg" title="Create Post"></a>
+                    </li>
+                    <!--coding club link-->
+                    <!-- <li>
+                        <a href="https://wvcoding.org/" target="_blank"><img src="../svg/wvcc-logo.svg" class="nav-svg" title="West Virginia Coding Club"></a>
+                    </li>  -->
+                    <!--gihub link-->
+                    <li>
+                        <a href="https://github.com/" target="_blank"><img src="../svg/github-brands.svg" class="nav-svg"></a>
+                    </li> 
+                    <!--notifications bell-->
+                    <li>
+                        <a href="notifications.html"><img src="../svg/bell-solid.svg" class="nav-svg"></a>
+                    </li> 
+                    <!--pfp-->
+                    <li>
+                        <div class="dropdown">
+                            <img src="../svg/circle-user-solid.svg" class="nav-svg dropbtn" onclick="myFunction()">
+                            <div class="dropdown-content" id="myDropdown">
+                              <a href="../html/view-profile.html">View Profile</a>
+                              <a href="../html/settings.html">Account Settings</a>
+                              <a href="#">Log-out</a>
+                            </div>
+                        </div> 
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- sort by (optional feature?) -->
+        <div class="sort-by">
+            <h2>Sort by</h2>
+            <div class="sb-new-top">
+                <a href="#" class="ntc-a"><img src="../svg/star-solid.svg" class="sb-svg"><span style="margin-left: 5px;"></span>New</a>
+                <a href="#" class="ntc-a"><img src="../svg/chart-line-solid.svg" class="sb-svg"><span style="margin-left: 5px;"></span>Top</a>
+                <a href="#" class="ntc-a"><img src="../svg/border-all-solid.svg" class="sb-svg"><span style="margin-left: 5px;"></span>Categories</a>
+            </div>
+        </div>
+
+        <!------------------------- format for the posts as seen in the home page -------------------------->
+        <div class="post-card">
+            <div class="post-name-and-upvote post-top">
+                <div class="post-title-and-username">
+                    <!-- title of post -->
+                    <h2>Title of post</h2>
+
+                    <!-- username -->
+                    <a href="#">Username123</a>
+                </div>
+                <span class="vote">
+                    <!-- upvote arrow -->
+                    <img src="../svg/heart-regular.svg" width="20" height="26" >
+
+                    <!-- upvote number -->
+                    <h3 style="margin-right: 5px;">5</h3>
+                </span>
+            </div>
+            <!-- text content of post -->
+            <p class="post-p">This is the content of the post. Bla bla. Ninja Rockets. Once apon a time, a man named Jack ran up a hill. He ran so fast people thought he was a goat. Jack would like to play the violin outside while it was raining. That is very sacreligous. But what was also lamentable was the fact that I can not spell. Yep. So just excuse me pls.</p>
+            <!-- view full post -->
+            <div class="vfp-bookmark">
+                <a href="post.html" class="vfp-btn">View full post</a>
+                <a class="bookmark" id="book-svg" onclick="bookmarkBtn()">
+                    <img src="../svg/bookmark-regular.svg">
+                </a>
+            </div>           
+        </div>
+
+
+        <!-- 
+            End of format. 
+            I just put a few more, post-card, below, so I could see what the site would look like
+            when it shows multiable posts.
+        -->
+
+
+        <div class="post-card">
+            <div class="post-name-and-upvote post-top">
+                <div class="post-title-and-username">
+                    <!-- title of post -->
+                    <h2>Title of post</h2>
+
+                    <!-- username -->
+                    <a href="#">Username123</a>
+                </div>
+                <span class="vote">
+                    <!-- upvote arrow -->
+                    <img src="../svg/heart-regular.svg" width="20" height="26" >
+
+                    <!-- upvote number -->
+                    <h3 style="margin-right: 5px;">5</h3>
+                </span>
+            </div>
+            <!-- text content of post -->
+            <p class="post-p">This is the content of the post. Bla bla. Ninja Rockets. Once apon a time, a man named Jack ran up a hill. He ran so fast people thought he was a goat. Jack would like to play the violin outside while it was raining. That is very sacreligous. But what was also lamentable was the fact that I can not spell. Yep. So just excuse me pls.</p>
+            <!-- view full post -->
+            <div class="vfp-bookmark">
+                <a href="#" class="vfp-btn">View full post</a>
+                <a class="bookmark" id="book-svg" onclick="bookmarkBtn()">
+                    <img src="../svg/bookmark-regular.svg">
+                </a>
+            </div>          
+        </div>
+
+        <div class="post-card">
+            <div class="post-name-and-upvote post-top">
+                <div class="post-title-and-username">
+                    <!-- title of post -->
+                    <h2>Title of post</h2>
+
+                    <!-- username -->
+                    <a href="#">Username123</a>
+                </div>
+                <span class="vote">
+                    <!-- upvote arrow -->
+                    <img src="../svg/heart-regular.svg" width="20" height="26" >
+
+                    <!-- upvote number -->
+                    <h3 style="margin-right: 5px;">5</h3>
+                </span>
+            </div>
+            <!-- text content of post -->
+            <p class="post-p">This is the content of the post. Bla bla. Ninja Rockets. Once apon a time, a man named Jack ran up a hill. He ran so fast people thought he was a goat. Jack would like to play the violin outside while it was raining. That is very sacreligous. But what was also lamentable was the fact that I can not spell. Yep. So just excuse me pls.</p>
+            <!-- view full post -->
+            <div class="vfp-bookmark">
+                <a href="#" class="vfp-btn">View full post</a>
+                <a class="bookmark" id="book-svg" onclick="bookmarkBtn()">
+                    <img src="../svg/bookmark-regular.svg">
+                </a>
+            </div>          
+        </div>
+
+        <div class="post-card">
+            <div class="post-name-and-upvote post-top">
+                <div class="post-title-and-username">
+                    <!-- title of post -->
+                    <h2>Title of post</h2>
+
+                    <!-- username -->
+                    <a href="#">Username123</a>
+                </div>
+                <span class="vote">
+                    <!-- upvote arrow -->
+                    <img src="../svg/heart-regular.svg" width="20" height="26" >
+
+                    <!-- upvote number -->
+                    <h3 style="margin-right: 5px;">5</h3>
+                </span>
+            </div>
+            <!-- text content of post -->
+            <p class="post-p">This is the content of the post. Bla bla. Ninja Rockets. Once apon a time, a man named Jack ran up a hill. He ran so fast people thought he was a goat. Jack would like to play the violin outside while it was raining. That is very sacreligous. But what was also lamentable was the fact that I can not spell. Yep. So just excuse me pls.</p>
+            <!-- view full post -->
+            <div class="vfp-bookmark">
+                <a href="#" class="vfp-btn">View full post</a>
+                <a class="bookmark" id="book-svg" onclick="bookmarkBtn()">
+                    <img src="../svg/bookmark-regular.svg">
+                </a>
+            </div>           
+        </div>
+
+        <div class="post-card">
+            <div class="post-name-and-upvote post-top">
+                <div class="post-title-and-username">
+                    <!-- title of post -->
+                    <h2>Title of post</h2>
+
+                    <!-- username -->
+                    <a href="#">Username123</a>
+                </div>
+                <span class="vote">
+                    <!-- upvote arrow -->
+                    <img src="../svg/heart-regular.svg" width="20" height="26" >
+
+                    <!-- upvote number -->
+                    <h3 style="margin-right: 5px;">5</h3>
+                </span>
+            </div>
+            <!-- text content of post -->
+            <p class="post-p">This is the content of the post. Bla bla. Ninja Rockets. Once apon a time, a man named Jack ran up a hill. He ran so fast people thought he was a goat. Jack would like to play the violin outside while it was raining. That is very sacreligous. But what was also lamentable was the fact that I can not spell. Yep. So just excuse me pls.</p>
+            <!-- view full post -->
+            <div class="vfp-bookmark">
+                <a href="#" class="vfp-btn">View full post</a>
+                <a class="bookmark" id="book-svg" onclick="bookmarkBtn()">
+                    <img src="../svg/bookmark-regular.svg">
+                </a>
+            </div>            
+        </div>
+
+        <div class="post-card">
+            <div class="post-name-and-upvote post-top">
+                <div class="post-title-and-username">
+                    <!-- title of post -->
+                    <h2>Title of post</h2>
+
+                    <!-- username -->
+                    <a href="#">Username123</a>
+                </div>
+                <span class="vote">
+                    <!-- upvote arrow -->
+                    <img src="../svg/heart-regular.svg" width="20" height="26" >
+
+                    <!-- upvote number -->
+                    <h3 style="margin-right: 5px;">5</h3>
+                </span>
+            </div>
+            <!-- text content of post -->
+            <p class="post-p">This is the content of the post. Bla bla. Ninja Rockets. Once apon a time, a man named Jack ran up a hill. He ran so fast people thought he was a goat. Jack would like to play the violin outside while it was raining. That is very sacreligous. But what was also lamentable was the fact that I can not spell. Yep. So just excuse me pls.</p>
+            <!-- view full post -->
+            <div class="vfp-bookmark">
+                <a href="#" class="vfp-btn">View full post</a>
+                <a class="bookmark" id="book-svg" onclick="bookmarkBtn()">
+                    <img src="../svg/bookmark-regular.svg">
+                </a>
+            </div>          
+        </div>
+        
+
+
+
+        <!-- load more posts -->
+        <div class="text-center">
+            <a href="#" class="load-more">Load more</a>
+        </div>
+
+        <!-- Back to top button -->
+        <button class="back-to-top" onclick="backToTop()">Back to top</button>
+        
+    </body>
+    <footer>
+        <div>
+            <h1 class="footer-text nav-logo">Idealize</h1>
+            <p class="footer-text">Some text about the app and stuff.</p>
+        </div>
+        <div class="middle-footer">
+            <a href="#" class="footer-text">Terms and Conditions</a><br>
+            <a href="#" class="footer-text">Privacy Policy</a><br>
+            <a href="#" class="footer-text">About</a>
+        </div>
+        <div class="footer-svg">
+            <a href="https://github.com/" target="_blank"><img src="../svg/github-brands.svg" height="30px" width="30px"></a><br>
+            <a href="https://wvcoding.org/" target="_blank"><img src="../svg/wvcc-logo.svg" height="30px" width="30px" title="West Virginia Coding Club"></a>
+        </div>
+    </footer>
+</html>
