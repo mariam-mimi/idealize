@@ -1,0 +1,42 @@
+Outlining pages for React
+
+Header
+Footer
+
+Home page:
+    SortedPostCardList
+	SortBy
+	PostCardList
+		PostCard
+
+Post Detail page:
+    PostContent
+        PostHeading
+        PostDescription
+        PostFooter
+    CommentList
+        CommentCard
+
+Create Post page:
+    CreatePostForm
+
+Notification page:
+    NotificationList
+        Notification
+
+Profile page:
+    PostVisibilityToggle (not shown when viewing as a different account)
+    FilteredPostCardList (filtering for visibility based on above)
+        PostCardList
+            ...
+
+    UserInfo (don't show Edit option when not logged in as this account)
+
+AccountSettings page:
+    AccountEditForm
+
+Login page:
+    LogInForm
+
+NewUser page:
+    CreateUserForm
