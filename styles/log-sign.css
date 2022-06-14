@@ -1,0 +1,186 @@
+
+:root {
+    /* grey color variables going from darkest (7) to lightest (1) */
+    --grey-7: #212934;
+    --grey-6: #5f6b7a;
+    --grey-5: #8895a7;
+    --grey-4: #b8c4ce;
+    --grey-3: #cfd6de;
+    --grey-2: #e1e7ec;
+    --grey-1: #f8f9fa;
+
+    /* green color variables going from darkest (6) to lightest (1) */
+    --green-6: #006553;
+    --green-5: #007a64;
+    --green-4: #009579;
+    --green-3: #179f85;
+    --green-2: #2ca890;
+    --green-1: #3fb09a;
+
+    /* blue color variables going from darkest (7) to lightest (1) */
+    --blue-7: #203d54;
+    --blue-6: #1a4971;
+    --blue-5: #2368a2;
+    --blue-4: #3183c8;
+    --blue-3: #63a2d8;
+    --blue-2: #aad4f5;
+    --blue-1: #eff8ff;
+
+    /* red color variables going from darkest (7) to lighest (1) */
+    --red-7: #611818;
+    --red-6: #891b1b;
+    --red-5: #b82020;
+    --red-4: #dc3030;
+    --red-3: #e46464;
+    --red-2: #f5aaaa;
+    --red-1: #fce8e8;
+}
+
+body {
+    background-color: var(--grey-2);
+    color: var(--grey-7);
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* changes higlight color */
+::selection {
+   background-color: var(--green-3);
+   color: var(--grey-1);
+}
+
+a {
+   color: var(--green-4);
+}
+
+a:hover {
+   color: var(--green-1);
+}
+
+/* -------------------------------------------- log-in/sign-up styles -----------------------------------------------*/
+
+.login-flex {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+}
+
+.login-h1 {
+   font-family: 'Libre Bodoni', serif;
+   font-size: 65px;
+   color: var(--green-4);
+   margin-bottom: 0;
+}
+
+h1 ~ p {
+   font-size: 20px;
+   color: var(--grey-7);
+   margin-top: 4px;
+}
+
+.login-form {
+   background-color: var(--grey-1);
+   max-width: 300px;
+   margin: 10px auto;
+   padding: 22px 28px;
+   color: var(--grey-7);
+   font-size: 16px;
+   border-radius: 4px;
+   box-shadow: 0px 1px 6px var(--grey-4);
+}
+
+.signup-form {
+   background-color: var(--grey-1);
+   max-width: 300px;
+   margin: 80px auto 0px;
+   padding: 22px 28px;
+   color: var(--grey-7);
+   font-size: 16px;
+   border-radius: 4px;
+   box-shadow: 0px 1px 6px var(--grey-4);
+}
+
+.form-header {
+   text-align: center;
+   margin: 0 0 30px 0;
+}
+
+fieldset {
+   padding: 10px;
+   border: none;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+   color: #212934;
+   border-style: none;
+   border: solid 1px var(--grey-3);
+   border-radius: 5px;
+   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+   outline: 0;
+   padding: 8px;
+   width: 90%;
+   margin-bottom: 15px;
+}
+
+input:focus {
+   border: solid 1px var(--green-3);
+}
+
+label {
+   display: block;
+   margin-bottom: 5px;
+}
+
+.login-btn {
+   padding: 15px 30px;
+   color: #FFF;
+   background-color: var(--green-3);
+   font-size: 18px;
+   text-align: center;
+   font-style: normal;
+   border: none;
+   border-radius: 2px;
+   width: 100%;
+   cursor: pointer;
+}  
+
+.login-btn:hover {
+   background-color: var(--green-5);
+}
+
+.create-account-btn {
+   background-color: var(--blue-4);
+   color: white;
+   text-decoration: none;
+   padding: 8px 20px 8px 20px;
+   border-radius: 2px;
+   display: flex;
+   justify-content: center;
+   width: 65%;
+   margin: auto;
+}
+
+.create-account-btn:hover {
+   color: white;
+}
+
+.create-account-btn:hover {
+   background-color: var(--blue-5);
+   text-decoration: none;
+}
+
+.form-line {
+   border-top: 2px solid var(--grey-3);
+   padding-right: 100%;
+}
+
+/* Back to log-in link, in sign-up.html, styles */
+
+.signup-form p {
+   font-size: 15px;
+}
