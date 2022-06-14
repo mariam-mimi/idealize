@@ -5,9 +5,9 @@ Footer
 
 Home page:
     SortedPostCardList
-	SortBy
-	PostCardList
-		PostCard
+        SortBy
+        PostCardList
+            PostCard
 
 Post Detail page:
     PostContent
