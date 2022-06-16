@@ -1,11 +1,12 @@
-import PostCard from '../Idealize/components/PostCard'
-import PostCardList from '../Idealize/components/PostCardList'
-import SortBy from '../Idealize/components/SortBy'
+import PostCard from './PostCard'
+import PostCardList from './PostCardList'
+import SortBy from './SortBy'
 
 export default function SortedPostCardList() {
     return (
         <li>
             <SortBy />
+            <PostCardList />
         </li>
     )
 }

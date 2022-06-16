@@ -1,9 +1,11 @@
-import PostCard from '../Idealize/components/PostCard'
+import PostCard from './PostCard'
 
 export default function PostCardList() {
     return (
-        <li>
+        <>
             <PostCard />
-        </li>
+            <PostCard />
+            <PostCard />
+        </>
     )
 }

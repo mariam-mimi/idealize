@@ -1,9 +1,9 @@
-import CommentCard from "../Idealize/components/CommentCard"
+import CommentCard from "./CommentCard"
 
 export default function CommentList() {
     return (
-        <li>
+        <>
             <CommentCard />
-        </li>
+        </>
     )
 }

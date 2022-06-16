@@ -1,6 +1,6 @@
-import PostFooter from '../Idealize/components/PostFooter'
-import PostDescription from '../Idealize/components/PostDescription'
-import PostHeading from '../idealize/componenets/PostHeading'
+import PostFooter from './Footer'
+import PostDescription from './PostDescription'
+import PostHeading from './Header'
 
 export default function PostContent() {
     return (

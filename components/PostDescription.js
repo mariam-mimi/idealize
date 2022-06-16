@@ -1,4 +1,4 @@
-import PostFooter from '../Idealize/components/PostFooter'
+import PostFooter from './Footer'
 
 export default function PostDescription() {
     return (
