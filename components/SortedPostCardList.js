@@ -4,9 +4,9 @@ import SortBy from './SortBy'
 
 export default function SortedPostCardList() {
     return (
-        <li>
+        <>
             <SortBy />
             <PostCardList />
-        </li>
+        </>
     )
 }
