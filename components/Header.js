@@ -1,7 +1,4 @@
-import PostFooter from './Footer'
-import PostDescription from './PostDescription'
-
-export default function PostHeading() {
+export default function Header() {
     return (
         <header>
             <nav>

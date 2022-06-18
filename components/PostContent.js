@@ -1,11 +1,11 @@
-import PostFooter from './Footer'
+import PostFooter from './PostFooter'
 import PostDescription from './PostDescription'
-import PostHeading from './Header'
+import PostHeader from './PostHeader'
 
 export default function PostContent() {
     return (
         <div>
-            <PostHeading />
+            <PostHeader />
             <PostDescription />
             <PostFooter />
         </div>
