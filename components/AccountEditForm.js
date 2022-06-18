@@ -1,6 +1,6 @@
 export default function AccountEditForm() {
     return (
-        <div class="card">
+        <div className="card">
             <h1>Edit Account</h1>
             <label for="u_username">Username:</label>
             <input type="text" id="u_username" name="u_user_name" />
@@ -14,7 +14,7 @@ export default function AccountEditForm() {
             <label for="u_confirm_password">Confirm Password:</label>
             <input type="password" id="u_confirm_password" name="u_user_confirm_password" />
             
-            <button class="save-changes-btn">Save changes</button>
+            <button className="save-changes-btn">Save changes</button>
         </div>
     )
 }
