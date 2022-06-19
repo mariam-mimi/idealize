@@ -3,10 +3,10 @@ export default function LogInForm() {
         <div>
             <form method="post" className="login-form">
                 <div>
-                    <label for="mail">Email:</label>
+                    <label htmlFor="mail">Email:</label>
                     <input type="email" id="mail" name="user_email" />
 
-                    <label for="password">Password:</label>
+                    <label htmlFor="password">Password:</label>
                     <input type="password" id="password" name="user_password" />
 
                     <button type="submit" className="login-btn">Log In</button>

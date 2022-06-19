@@ -15,7 +15,7 @@ export default function PostHeader() {
 
                     <img src="../svg/heart-regular.svg" width="22" height="26" />
 
-                    <h3 style="margin-right: 5px;">5</h3>
+                    <h3 style={{ marginRight: "5px"}}>5</h3>
                 </span>
             </div>
         </div>

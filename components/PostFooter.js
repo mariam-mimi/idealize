@@ -16,7 +16,7 @@ export default function PostFooter() {
                           <textarea placeholder="Write a comment" required className="txt-area-comment"></textarea>
                       
                           <div className="close-send-btn">
-                            <button type="button" className="btn cancel close-btn" onclick="closeForm()" style="margin-right: 10px;">Close</button>
+                            <button type="button" className="btn cancel close-btn" onclick="closeForm()" style={{marginRight: "10px"}}>Close</button>
                             <button type="submit" className="btn send-btn">Send</button>
                           </div>
                         </form>

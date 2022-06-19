@@ -1,6 +1,6 @@
 export default function CommentCard() {
     return (
-        <><h2 className="comments" style={{"margin": "70px 10% 0px 10%;"}}>Comments (1):</h2>
+        <><h2 className="comments" style={{ margin: "70px 10% 0px 10%"}}>Comments (1):</h2>
         
         <div className="comments">
             <a href="#">Username123</a>
