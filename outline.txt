@@ -25,12 +25,12 @@ Notification page:
         Notification
 
 Profile page:
-    PostVisibilityToggle (not shown when viewing as a different account)
+    PostVisibilityToggle (not shown when viewing as a different account) 77 to 80
     FilteredPostCardList (filtering for visibility based on above)
         PostCardList
             ...
 
-    UserInfo (don't show Edit option when not logged in as this account)
+    UserInfo (don't show Edit option when not logged in as this account) 55 to 72
 
 AccountSettings page:
     AccountEditForm
