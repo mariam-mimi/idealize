@@ -1,7 +1,7 @@
 export default function PostFooter() {
     return (
         <div className="np-bdiv">
-                <button className="bookmark" id="book-svg" style="margin-right: 10px;">
+                <button className="bookmark" id="book-svg" style={{ marginRight: '10px' }}>
                     <img src="../svg/bookmark-regular.svg" />
                 </button>
 
@@ -10,7 +10,7 @@ export default function PostFooter() {
                         <img src="../svg/reply-solid.svg" className="reply-btn-svg" />
                         <span>Reply</span>
                     </div>
-                    <div className="form-popup" id="myForm" style="display: none; justify-content: center;">
+                    <div className="form-popup" id="myForm" style={{ display: 'none', justifyContent: 'center' }}>
                         <form className="form-container">
                       
                           <textarea placeholder="Write a comment" required className="txt-area-comment"></textarea>
