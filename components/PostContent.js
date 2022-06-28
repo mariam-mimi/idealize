@@ -4,7 +4,7 @@ import PostHeader from './PostHeader'
 
 export default function PostContent() {
     return (
-        <div>
+        <div className="np-card">
             <PostHeader />
             <PostDescription />
             <PostFooter />

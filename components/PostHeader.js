@@ -3,7 +3,6 @@ import PostDescription from './PostDescription'
 
 export default function PostHeader() {
     return (
-        <div className="np-card">
             <div className="post-name-and-upvote post-top">
                 <div className="post-title-and-username">
 
@@ -18,6 +17,5 @@ export default function PostHeader() {
                     <h3 style={{ marginRight: "5px"}}>5</h3>
                 </span>
             </div>
-        </div>
     )
 }
