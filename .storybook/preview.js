@@ -1,4 +1,5 @@
 import '../styles/main.css';
+import '../styles/log-sign.css'
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
