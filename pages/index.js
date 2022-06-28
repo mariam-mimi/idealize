@@ -3,13 +3,9 @@ import Image from 'next/image'
 
 import SortedPostCardList from '../components/SortedPostCardList';
 
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-
 export default function Home() {
   return (
     <>
-      <Header />
       <SortedPostCardList />
 
       {/* Load more posts */}
@@ -18,9 +14,7 @@ export default function Home() {
       </div>
 
       {/* Back to top */}
-      <button className="back-to-top">Back to top</button>
-    
-      <Footer />
+      <button className="back-to-top">Back to top</button>    
     </>
   )
 }

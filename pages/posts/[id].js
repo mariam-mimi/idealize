@@ -1,12 +1,9 @@
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
 import PostContent from '../../components/PostContent';
 import CommentList from '../../components/CommentList';
 
 export default function PostDetailPage() {
     return (
         <>
-            <Header />
             <PostContent />            
             <CommentList />
 
@@ -18,7 +15,6 @@ export default function PostDetailPage() {
             {/* Back to top */}
             <button className="back-to-top">Back to top</button>
 
-            <Footer />
         </>
     )
 }
