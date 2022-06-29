@@ -3,13 +3,13 @@ Outlining pages for React
 Header
 Footer
 
-Home page:
+Home page: (/)
     SortedPostCardList
         SortBy
         PostCardList
             PostCard
 
-Post Detail page:
+Post Detail page: (/posts/[id])
     PostContent
         PostHeading
         PostDescription
@@ -17,14 +17,14 @@ Post Detail page:
     CommentList
         CommentCard
 
-Create Post page:
+Create Post page: (/posts/new)
     CreatePostForm
 
-Notification page:
+Notification page: (/notifications)
     NotificationList
         Notification
 
-Profile page:
+Profile page: (/profile)
     PostVisibilityToggle (not shown when viewing as a different account) 
     FilteredPostCardList (filtering for visibility based on above)
         PostCardList
@@ -32,11 +32,11 @@ Profile page:
 
     UserInfo (don't show Edit option when not logged in as this account) 
 
-AccountSettings page:
+AccountSettings page: (/profile/settings)
     AccountEditForm
 
-Login page:
+Login page: (/login)
     LogInForm
 
-NewUser page:
+NewUser page: (/register)
     CreateUserForm
