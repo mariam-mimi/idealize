@@ -1,19 +1,21 @@
 import Image from 'next/image';
 
+import styles from '../styles/Header.module.css';
+
 export default function Header() {
   return (
     <header>
-      <nav>
-        <a className="nav-logo" href="index.html">
+      <nav className={styles.nav}>
+        <a className={styles.navLogo} href="index.html">
           Idealize
         </a>
-        <ul className="nav-list">
+        <ul className={styles.navList}>
           <li>
             <a href="create-post.html">
               <Image
                 src="/svg/plus-solid.svg"
                 alt="Plus icon"
-                className="nav-svg"
+                className={styles.navSvg}
                 title="Create Post"
                 height={24}
                 width={24}
@@ -26,7 +28,7 @@ export default function Header() {
               <Image
                 src="/svg/github-brands.svg"
                 alt="GitHub icon"
-                className="nav-svg"
+                className={styles.navSvg}
                 height={24}
                 width={24}
               />
@@ -38,7 +40,7 @@ export default function Header() {
               <Image
                 src="/svg/bell-solid.svg"
                 alt="Notification bell icon"
-                className="nav-svg"
+                className={styles.navSvg}
                 height={24}
                 width={24}
               />
@@ -46,16 +48,16 @@ export default function Header() {
           </li>
 
           <li>
-            <div className="dropdown">
+            <div className={styles.dropdown}>
               <Image
                 src="/svg/circle-user-solid.svg"
                 alt="User circle icon"
-                className="nav-svg dropbtn"
+                className={`${styles.navSvg} ${styles.dropbtn}`}
                 height={24}
                 width={24}
               />
 
-              <div className="dropdown-content" id="myDropdown">
+              <div className={styles.dropdownContent} id="myDropdown">
                 <a href="../html/view-profile.html">View Profile</a>
                 <a href="../html/settings.html">Account Settings</a>
                 <a href="#">Log-out</a>

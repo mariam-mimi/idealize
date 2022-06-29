@@ -1,24 +1,29 @@
 import Image from 'next/image';
 
+import headerStyles from '../styles/Header.module.css';
+import styles from '../styles/Footer.module.css';
+
 export default function Footer() {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <div>
-        <h1 className="footer-text nav-logo">Idealize</h1>
-        <p className="footer-text">Some text about the app and stuff.</p>
+        <h1 className={`${styles.footerText} ${headerStyles.navLogo}`}>
+          Idealize
+        </h1>
+        <p className={styles.footerText}>Some text about the app and stuff.</p>
       </div>
-      <div className="middle-footer">
-        <a href="#" className="footer-text">
+      <div className={styles.middleFooter}>
+        <a href="#" className={styles.footerText}>
           Terms and Conditions
         </a>
-        <a href="#" className="footer-text">
+        <a href="#" className={styles.footerText}>
           Privacy Policy
         </a>
-        <a href="#" className="footer-text">
+        <a href="#" className={styles.footerText}>
           About
         </a>
       </div>
-      <div className="footer-svg">
+      <div className={styles.footerSvg}>
         <a href="https://github.com/" target="_blank" rel="noreferrer">
           <Image
             src="/svg/github-brands.svg"
