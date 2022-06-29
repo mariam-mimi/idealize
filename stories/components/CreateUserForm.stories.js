@@ -1,8 +1,8 @@
 import CreateUserFormComponent from '../../components/CreateUserForm';
 
 export default {
-    title: 'User/CreateUserForm',
-    component: CreateUserFormComponent,
-}
+  title: 'User/CreateUserForm',
+  component: CreateUserFormComponent,
+};
 
-export const CreateUserForm = () => <CreateUserFormComponent />
+export const CreateUserForm = () => <CreateUserFormComponent />;

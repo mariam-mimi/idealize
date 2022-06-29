@@ -1,12 +1,12 @@
-import PostCard from './PostCard'
-import PostCardList from './PostCardList'
-import SortBy from './SortBy'
+import PostCard from './PostCard';
+import PostCardList from './PostCardList';
+import SortBy from './SortBy';
 
 export default function SortedPostCardList() {
-    return (
-        <>
-            <SortBy />
-            <PostCardList />
-        </>
-    )
+  return (
+    <>
+      <SortBy />
+      <PostCardList />
+    </>
+  );
 }

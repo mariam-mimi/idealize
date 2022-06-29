@@ -147,7 +147,7 @@ nav ul li {
 
 .dropdown .dropbtn {
     cursor: pointer;
-    font-size: 16px;  
+    font-size: 16px;
     border: none;
     outline: none;
     color: white;
@@ -196,7 +196,7 @@ nav ul li {
     z-index:1;
     height: 0;
     border-bottom: solid 15px var(--grey-1); /* Creates the arrow pointing up, to change to a notch instead user border-top */
-    
+
     border-left: solid 15px transparent; /* Creates triangle effect */
     border-right: solid 15px transparent; /* Creates triangle effect */
 }
@@ -262,12 +262,12 @@ nav ul li {
 }
 
 .vote {
-    display: flex; 
+    display: flex;
     flex-direction: row-reverse;
     cursor: pointer;
     text-align: center;
     font-size: 15px;
-} 
+}
 
 .vote h3 {
     margin-top: 0px;
@@ -324,7 +324,7 @@ nav ul li {
     padding: 5px 20px 10px 20px;
     border-radius: 5px;
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
 .sb-new-top {
@@ -500,7 +500,7 @@ label {
     display: table;
     /* border: thin solid var(--grey-4); */
   }
-  
+
   /* Style the buttons inside the tab */
   .tab button {
     background-color: white;
@@ -512,23 +512,23 @@ label {
     transition: 0.3s;
     font-size: 17px;
   }
-  
+
   /* Change background color of buttons on hover */
   .tab button:hover {
     background-color: var(--green-2);
     color: var(--grey-1);
   }
-  
+
   /* Create an active/current tablink class */
   /* .tab button.active {
     border-bottom: white;
   } */
-  
+
   /* Style the tab content */
   .tabcontent {
     display: none;
   }
-  
+
 /* ------------------------------------------ visited post styles --------------------------------------------- */
 
 .np-card {
@@ -691,12 +691,12 @@ input[type="text"] {
 input:focus {
     border: solid 1px var(--green-3);
 }
- 
+
  label {
     display: block;
     margin-bottom: 5px;
-} 
- 
+}
+
 
 /* -------------------------------------------------- footer -----------------------------------------------------------*/
 

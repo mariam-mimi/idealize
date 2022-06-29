@@ -1,8 +1,8 @@
 import PostVisibilityToggleComponent from '../../components/PostVisibilityToggle';
 
 export default {
-    title: 'Posts/PostVisibilityToggle',
-    component: PostVisibilityToggleComponent,
-}
+  title: 'Posts/PostVisibilityToggle',
+  component: PostVisibilityToggleComponent,
+};
 
-export const PostVisibilityToggle = () => <PostVisibilityToggleComponent />
+export const PostVisibilityToggle = () => <PostVisibilityToggleComponent />;

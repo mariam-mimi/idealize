@@ -1,8 +1,8 @@
 import FooterComponent from '../../components/Footer';
 
 export default {
-    title: 'Layout/Footer',
-    component: FooterComponent,
-}
+  title: 'Layout/Footer',
+  component: FooterComponent,
+};
 
-export const Footer = () => <FooterComponent />
+export const Footer = () => <FooterComponent />;

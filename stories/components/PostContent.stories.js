@@ -1,8 +1,8 @@
 import PostContentComponent from '../../components/PostContent';
 
 export default {
-    title: 'Posts/PostContent',
-    component: PostContentComponent,
-}
+  title: 'Posts/PostContent',
+  component: PostContentComponent,
+};
 
-export const PostContent = () => <PostContentComponent />
+export const PostContent = () => <PostContentComponent />;

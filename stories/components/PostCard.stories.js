@@ -1,8 +1,8 @@
 import PostCardComponent from '../../components/PostCard';
 
 export default {
-    title: 'Posts/PostCard',
-    component: PostCardComponent,
-}
+  title: 'Posts/PostCard',
+  component: PostCardComponent,
+};
 
-export const PostCard = () => <PostCardComponent />
+export const PostCard = () => <PostCardComponent />;

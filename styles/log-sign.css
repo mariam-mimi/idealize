@@ -147,7 +147,7 @@ label {
    border-radius: 2px;
    width: 100%;
    cursor: pointer;
-}  
+}
 
 .login-btn:hover {
    background-color: var(--green-5);
