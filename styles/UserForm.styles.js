@@ -1,64 +1,8 @@
 import css from 'styled-jsx/css';
 
 export const background = css.global`
-  :root {
-    /* grey color variables going from darkest (7) to lightest (1) */
-    --grey-7: #212934;
-    --grey-6: #5f6b7a;
-    --grey-5: #8895a7;
-    --grey-4: #b8c4ce;
-    --grey-3: #cfd6de;
-    --grey-2: #e1e7ec;
-    --grey-1: #f8f9fa;
-
-    /* green color variables going from darkest (6) to lightest (1) */
-    --green-6: #006553;
-    --green-5: #007a64;
-    --green-4: #009579;
-    --green-3: #179f85;
-    --green-2: #2ca890;
-    --green-1: #3fb09a;
-
-    /* blue color variables going from darkest (7) to lightest (1) */
-    --blue-7: #203d54;
-    --blue-6: #1a4971;
-    --blue-5: #2368a2;
-    --blue-4: #3183c8;
-    --blue-3: #63a2d8;
-    --blue-2: #aad4f5;
-    --blue-1: #eff8ff;
-
-    /* red color variables going from darkest (7) to lighest (1) */
-    --red-7: #611818;
-    --red-6: #891b1b;
-    --red-5: #b82020;
-    --red-4: #dc3030;
-    --red-3: #e46464;
-    --red-2: #f5aaaa;
-    --red-1: #fce8e8;
-  }
-
   body {
     background-color: var(--grey-2);
     color: var(--grey-7);
-    font-family: 'Poppins', sans-serif;
-  }
-
-  /* changes higlight color */
-  ::selection {
-    background-color: var(--green-3);
-    color: var(--grey-1);
-  }
-
-  a {
-    color: var(--green-4);
-  }
-
-  a:hover {
-    color: var(--green-1);
-  }
-
-  .text-center {
-    text-align: center;
   }
 `;
