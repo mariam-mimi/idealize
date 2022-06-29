@@ -1,4 +1,4 @@
-import heartIcon from '../Idealize/svg/heart-regular.svg';
+import Image from 'next/image';
 
 export default function PostCard() {
   return (
@@ -10,7 +10,13 @@ export default function PostCard() {
           <a href="#">Username123</a>
         </div>
         <span className="vote">
-          <img src="/svg/heart-regular.svg" width="20" height="26" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/svg/heart-regular.svg"
+            alt="Heart icon"
+            width="20"
+            height="26"
+          />
 
           <h3 style={{ marginRight: '5px' }}>5</h3>
         </span>
@@ -27,7 +33,12 @@ export default function PostCard() {
           View full post
         </a>
         <a className="bookmark" id="book-svg">
-          <img src="/svg/bookmark-regular.svg" />
+          <Image
+            src="/svg/bookmark-regular.svg"
+            alt="Bookmark icon"
+            height={24}
+            width={18}
+          />
         </a>
       </div>
     </div>

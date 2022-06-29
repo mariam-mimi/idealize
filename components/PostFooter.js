@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function PostFooter() {
   return (
     <div className="np-bdiv">
@@ -6,13 +8,24 @@ export default function PostFooter() {
         id="book-svg"
         style={{ marginRight: '10px' }}
       >
-        <img src="../svg/bookmark-regular.svg" />
+        <Image
+          src="/svg/bookmark-regular.svg"
+          alt="Bookmark icon"
+          height={24}
+          width={18}
+        />
       </button>
 
       <div className="reply-btn">
         <div id="imgComment" onClick="openForm()">
-          <img src="../svg/reply-solid.svg" className="reply-btn-svg" />
-          <span>Reply</span>
+          <Image
+            src="/svg/reply-solid.svg"
+            alt="Reply arrow icon"
+            height={18}
+            width={18}
+            className="reply-btn-svg"
+          />
+          <span style={{ marginLeft: '6px' }}>Reply</span>
         </div>
         <div
           className="form-popup"

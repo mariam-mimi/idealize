@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Footer() {
   return (
     <footer>
@@ -18,14 +20,20 @@ export default function Footer() {
       </div>
       <div className="footer-svg">
         <a href="https://github.com/" target="_blank" rel="noreferrer">
-          <img src="../svg/github-brands.svg" height="30px" width="30px" />
+          <Image
+            src="/svg/github-brands.svg"
+            alt="GitHub icon"
+            height={30}
+            width={30}
+          />
         </a>
         <a href="https://wvcoding.org/" target="_blank" rel="noreferrer">
-          <img
-            src="../svg/wvcc-logo.svg"
-            height="30px"
-            width="30px"
+          <Image
+            src="/svg/wvcc-logo.svg"
+            alt="West Virginia Coding Club icon"
             title="West Virginia Coding Club"
+            height={30}
+            width={30}
           />
         </a>
       </div>
