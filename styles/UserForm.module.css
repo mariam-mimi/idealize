@@ -1,0 +1,121 @@
+.loginFlex {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 150px;
+}
+
+.loginH1 {
+ font-family: 'Libre Bodoni', serif;
+ font-size: 65px;
+ color: var(--green-4);
+ margin-bottom: 0;
+}
+
+.loginH1 ~ p {
+ font-size: 20px;
+ color: var(--grey-7);
+ margin-top: 4px;
+}
+
+.loginForm {
+ background-color: var(--grey-1);
+ max-width: 300px;
+ margin: 10px auto;
+ padding: 22px 28px;
+ color: var(--grey-7);
+ font-size: 16px;
+ border-radius: 4px;
+ box-shadow: 0px 1px 6px var(--grey-4);
+}
+
+.signupForm {
+ background-color: var(--grey-1);
+ max-width: 300px;
+ margin: 80px auto 0px;
+ padding: 22px 28px;
+ color: var(--grey-7);
+ font-size: 16px;
+ border-radius: 4px;
+ box-shadow: 0px 1px 6px var(--grey-4);
+}
+
+.formHeader {
+ text-align: center;
+ margin: 0 0 30px 0;
+}
+
+.formGroup {
+ padding: 10px;
+ border: none;
+}
+
+.formControl[type="email"],
+.formControl[type="password"],
+.formControl[type="text"] {
+ color: #212934;
+ border-style: none;
+ border: solid 1px var(--grey-3);
+ border-radius: 5px;
+ box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+ outline: 0;
+ padding: 8px;
+ width: 90%;
+ margin-bottom: 15px;
+}
+
+.formControl:focus {
+ border: solid 1px var(--green-3);
+}
+
+.formLabel {
+ display: block;
+ margin-bottom: 5px;
+}
+
+.loginBtn {
+ padding: 15px 30px;
+ color: #FFF;
+ background-color: var(--green-3);
+ font-size: 18px;
+ text-align: center;
+ font-style: normal;
+ border: none;
+ border-radius: 2px;
+ width: 100%;
+ cursor: pointer;
+}
+
+.loginBtn:hover {
+ background-color: var(--green-5);
+}
+
+.createAccountBtn {
+ background-color: var(--blue-4);
+ color: white;
+ text-decoration: none;
+ padding: 8px 20px 8px 20px;
+ border-radius: 2px;
+ display: flex;
+ justify-content: center;
+ width: 65%;
+ margin: auto;
+}
+
+.createAccountBtn:hover {
+ color: white;
+}
+
+.createAccountBtn:hover {
+ background-color: var(--blue-5);
+ text-decoration: none;
+}
+
+.formLine {
+ border-top: 2px solid var(--grey-3);
+ padding-right: 100%;
+}
+
+/* Back to log-in link, in sign-up.html, styles */
+.signupForm p {
+ font-size: 15px;
+}
