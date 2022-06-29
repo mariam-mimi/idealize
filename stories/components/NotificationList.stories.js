@@ -1,7 +1,7 @@
 import NotificationListComponent from '../../components/NotificationList';
 
 export default {
-    title: 'Layout/NotificationList',
+    title: 'User/NotificationList',
     component: NotificationListComponent,
 }
 
