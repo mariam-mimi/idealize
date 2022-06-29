@@ -1,11 +1,11 @@
-import PostCard from './PostCard'
+import PostCard from './PostCard';
 
 export default function PostCardList() {
-    return (
-        <>
-            <PostCard />
-            <PostCard />
-            <PostCard />
-        </>
-    )
+  return (
+    <>
+      <PostCard />
+      <PostCard />
+      <PostCard />
+    </>
+  );
 }

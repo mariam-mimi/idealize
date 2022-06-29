@@ -1,14 +1,14 @@
-import Notification from "./Notification"
+import Notification from './Notification';
 
 export default function NotificationList() {
-    return (
-        <div className="card">
-            <h1 className="main-line">Notifications</h1>
+  return (
+    <div className="card">
+      <h1 className="main-line">Notifications</h1>
 
-            <div> 
-                <Notification />
-                <Notification />
-            </div>
-        </div>
-    )
+      <div>
+        <Notification />
+        <Notification />
+      </div>
+    </div>
+  );
 }

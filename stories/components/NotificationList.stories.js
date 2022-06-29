@@ -1,8 +1,8 @@
 import NotificationListComponent from '../../components/NotificationList';
 
 export default {
-    title: 'Layout/NotificationList',
-    component: NotificationListComponent,
-}
+  title: 'User/NotificationList',
+  component: NotificationListComponent,
+};
 
-export const NotificationList = () => <NotificationListComponent />
+export const NotificationList = () => <NotificationListComponent />;

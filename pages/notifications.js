@@ -1,5 +1,5 @@
-import NotificationList from '../components/NotificationList'
+import NotificationList from '../components/NotificationList';
 
 export default function NotificationPage() {
-    return <NotificationList />
+  return <NotificationList />;
 }

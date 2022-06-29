@@ -1,8 +1,8 @@
 import AccountEditFormComponent from '../../components/AccountEditForm';
 
 export default {
-    title: 'User/AccountEditForm',
-    component: AccountEditFormComponent,
-}
+  title: 'User/AccountEditForm',
+  component: AccountEditFormComponent,
+};
 
-export const AccountEditForm = () => <AccountEditFormComponent />
+export const AccountEditForm = () => <AccountEditFormComponent />;
