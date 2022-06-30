@@ -1,52 +1,53 @@
-import styles from '../styles/UserForm.module.css';
+import formStyles from '../styles/Forms.module.css';
+import userFormStyles from '../styles/UserForm.module.css';
 
 export default function CreateUserhtmlForm() {
   return (
     <div>
-      <form method="post" className={styles.signupForm}>
-        <fieldset className={styles.formGroup}>
-          <h1 className={styles.formHeader}>Create Account</h1>
-          <label htmlFor="username" className={styles.formLabel}>
+      <form method="post" className={userFormStyles.signupForm}>
+        <fieldset className={formStyles.formGroup}>
+          <h1 className={userFormStyles.formHeader}>Create Account</h1>
+          <label htmlFor="username" className={formStyles.formLabel}>
             Username:
           </label>
           <input
             type="text"
             id="username"
             name="user_name"
-            className={styles.formControl}
+            className={formStyles.formControl}
           />
 
-          <label htmlFor="mail" className={styles.formLabel}>
+          <label htmlFor="mail" className={formStyles.formLabel}>
             Email:
           </label>
           <input
             type="email"
             id="mail"
             name="user_email"
-            className={styles.formControl}
+            className={formStyles.formControl}
           />
 
-          <label htmlFor="create_password" className={styles.formLabel}>
+          <label htmlFor="create_password" className={formStyles.formLabel}>
             Create Password:
           </label>
           <input
             type="password"
             id="create_password"
             name="user_create_password"
-            className={styles.formControl}
+            className={formStyles.formControl}
           />
 
-          <label htmlFor="confirm_password" className={styles.formLabel}>
+          <label htmlFor="confirm_password" className={formStyles.formLabel}>
             Confirm Password:
           </label>
           <input
             type="password"
             id="confirm_password"
             name="user_confirm_password"
-            className={styles.formControl}
+            className={formStyles.formControl}
           />
 
-          <button type="submit" className={styles.loginBtn}>
+          <button type="submit" className={userFormStyles.loginBtn}>
             Sign up
           </button>
 

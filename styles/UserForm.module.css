@@ -17,59 +17,30 @@
  margin-top: 4px;
 }
 
-.loginForm {
- background-color: var(--grey-1);
- max-width: 300px;
- margin: 10px auto;
- padding: 22px 28px;
- color: var(--grey-7);
- font-size: 16px;
- border-radius: 4px;
- box-shadow: 0px 1px 6px var(--grey-4);
+.authForm {
+  composes: formContainer from './Forms.module.css';
+  background-color: var(--grey-1);
+  width: auto;
+  height: auto;
+  margin: 10px auto;
+  padding: 22px 28px;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 6px var(--grey-4);
 }
 
+/* Back to log-in link, in sign-up.html, styles */
+.signupForm p {
+  font-size: 15px;
+ }
+
 .signupForm {
- background-color: var(--grey-1);
- max-width: 300px;
- margin: 80px auto 0px;
- padding: 22px 28px;
- color: var(--grey-7);
- font-size: 16px;
- border-radius: 4px;
- box-shadow: 0px 1px 6px var(--grey-4);
+  composes: authForm;
 }
 
 .formHeader {
  text-align: center;
  margin: 0 0 30px 0;
-}
-
-.formGroup {
- padding: 10px;
- border: none;
-}
-
-.formControl[type="email"],
-.formControl[type="password"],
-.formControl[type="text"] {
- color: #212934;
- border-style: none;
- border: solid 1px var(--grey-3);
- border-radius: 5px;
- box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
- outline: 0;
- padding: 8px;
- width: 90%;
- margin-bottom: 15px;
-}
-
-.formControl:focus {
- border: solid 1px var(--green-3);
-}
-
-.formLabel {
- display: block;
- margin-bottom: 5px;
 }
 
 .loginBtn {
@@ -113,9 +84,4 @@
 .formLine {
  border-top: 2px solid var(--grey-3);
  padding-right: 100%;
-}
-
-/* Back to log-in link, in sign-up.html, styles */
-.signupForm p {
- font-size: 15px;
 }

@@ -1,45 +1,4 @@
-fieldset {
-  padding: 10px;
-  border: none;
-}
-
-input[type="email"],
-input[type="password"],
-input[type="text"] {
-    color: var(--grey-7);
-    border-style: none;
-    border: solid 1px var(--grey-3);
-    border-radius: 5px;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    outline: 0;
-    padding: 8px;
-    width: 90%;
-    margin-bottom: 15px;
-}
-
-textarea {
-    color: var(--grey-7);
-    border-style: none;
-    border: solid 1px var(--grey-3);
-    border-radius: 5px;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    outline: 0;
-    width: 90%;
-    padding: 8px 8px 50px 8px;
-    margin-bottom: 15px;
-}
-
-input:focus,
-textarea:focus {
-    border: solid 1px var(--green-3);
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-/* The popup form - hidden by default */
+ /* The popup form - hidden by default */
 .form-popup {
   display: none;
   position: fixed;

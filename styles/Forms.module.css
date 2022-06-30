@@ -1,0 +1,57 @@
+.formGroup {
+  padding: 10px;
+  border: none;
+}
+
+.formControl {
+  color: var(--grey-7);
+  border: solid 1px var(--grey-3);
+  border-radius: 5px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  outline: 0;
+  padding: 8px;
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+.formControl:focus {
+  border: solid 1px var(--green-3);
+}
+
+input.formControl[type="email"],
+input.formControl[type="password"],
+input.formControl[type="text"] {
+  padding: 8px;
+}
+
+textarea.formControl {
+  padding: 8px 8px 50px 8px;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* The popup form - hidden by default */
+.formPopup {
+  display: none;
+  position: fixed;
+  bottom: 10vh;
+  left: 10vw;
+  transition: bottom .3s ease, opacity .2s ease;
+  width: 80vw;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.formContainer {
+  max-width: 300px;
+  width: 300px;
+  height: 150px;
+  margin-bottom: 50px;
+  padding: 80px;
+  color: var(--grey-7);
+  background-color: white;
+  box-shadow: 0px 1px 4px 4px rgb(0 0 0 / 6%);
+}

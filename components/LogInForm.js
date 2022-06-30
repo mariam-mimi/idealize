@@ -1,31 +1,32 @@
-import styles from '../styles/UserForm.module.css';
+import formStyles from '../styles/Forms.module.css';
+import userFormStyles from '../styles/UserForm.module.css';
 
 export default function LogInForm() {
   return (
     <div>
-      <form method="post" className={styles.loginForm}>
-        <fieldset className={styles.formGroup}>
-          <label htmlFor="mail" className={styles.formLabel}>
+      <form method="post" className={userFormStyles.authForm}>
+        <fieldset className={formStyles.formGroup}>
+          <label htmlFor="mail" className={formStyles.formLabel}>
             Email:
           </label>
           <input
             type="email"
             id="mail"
             name="user_email"
-            className={styles.formControl}
+            className={formStyles.formControl}
           />
 
-          <label htmlFor="password" className={styles.formLabel}>
+          <label htmlFor="password" className={formStyles.formLabel}>
             Password:
           </label>
           <input
             type="password"
             id="password"
             name="user_password"
-            className={styles.formControl}
+            className={formStyles.formControl}
           />
 
-          <button type="submit" className={styles.loginBtn}>
+          <button type="submit" className={userFormStyles.loginBtn}>
             Log In
           </button>
 
@@ -33,12 +34,12 @@ export default function LogInForm() {
             <p className="text-center">Forgot password?</p>
           </a>
 
-          <span className={styles.formLine}></span>
+          <span className={userFormStyles.formLine}></span>
 
           <a
             role="button"
             href="sign-up.html"
-            className={styles.createAccountBtn}
+            className={userFormStyles.createAccountBtn}
           >
             Create new account
           </a>
