@@ -1,17 +1,18 @@
 import Image from 'next/image';
 
 import styles from '../styles/Header.module.css';
+import Link from 'next/link';
 
 export default function Header() {
   return (
     <header>
       <nav className={styles.nav}>
-        <a className={styles.navLogo} href="index.html">
-          Idealize
-        </a>
+        <Link href="index.html">
+          <a className={styles.navLogo}>Idealize</a>
+        </Link>
         <ul className={styles.navList}>
-          <li>
-            <a href="create-post.html">
+          <Link href="create-post.html">
+            <a>
               <Image
                 src="/svg/plus-solid.svg"
                 alt="Plus icon"
@@ -21,7 +22,7 @@ export default function Header() {
                 width={24}
               />
             </a>
-          </li>
+          </Link>
 
           <li>
             <a href="https://github.com/" target="_blank" rel="noreferrer">
@@ -35,8 +36,8 @@ export default function Header() {
             </a>
           </li>
 
-          <li>
-            <a href="notifications.html">
+          <Link href="notifications.html">
+            <a>
               <Image
                 src="/svg/bell-solid.svg"
                 alt="Notification bell icon"
@@ -45,7 +46,7 @@ export default function Header() {
                 width={24}
               />
             </a>
-          </li>
+          </Link>
 
           <li>
             <div className={styles.dropdown}>
@@ -58,8 +59,12 @@ export default function Header() {
               />
 
               <div className={styles.dropdownContent} id="myDropdown">
-                <a href="../html/view-profile.html">View Profile</a>
-                <a href="../html/settings.html">Account Settings</a>
+                <Link href="../html/view-profile.html">
+                  <a>View Profile</a>
+                </Link>
+                <Link href="../html/settings.html">
+                  <a>Account Settings</a>
+                </Link>
                 <a href="#">Log-out</a>
               </div>
             </div>

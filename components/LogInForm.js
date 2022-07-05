@@ -1,5 +1,6 @@
 import formStyles from '../styles/Forms.module.css';
 import userFormStyles from '../styles/UserForm.module.css';
+import Link from 'next/link';
 
 export default function LogInForm() {
   return (
@@ -36,13 +37,11 @@ export default function LogInForm() {
 
           <span className={userFormStyles.formLine}></span>
 
-          <a
-            role="button"
-            href="sign-up.html"
-            className={userFormStyles.createAccountBtn}
-          >
-            Create new account
-          </a>
+          <Link href="sign-up.html">
+            <a role="button" className={userFormStyles.createAccountBtn}>
+              Create new account
+            </a>
+          </Link>
         </fieldset>
       </form>
     </div>

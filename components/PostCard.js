@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function PostCard() {
   return (
@@ -29,9 +30,9 @@ export default function PostCard() {
         fact that I can not spell. Yep. So just excuse me pls.
       </p>
       <div className="vfp-bookmark">
-        <a href="post.html" className="vfp-btn">
-          View full post
-        </a>
+        <Link href="post.html">
+          <a className="vfp-btn">View full post</a>
+        </Link>
         <a className="bookmark" id="book-svg">
           <Image
             src="/svg/bookmark-regular.svg"

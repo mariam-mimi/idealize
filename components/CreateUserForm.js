@@ -1,5 +1,6 @@
 import formStyles from '../styles/Forms.module.css';
 import userFormStyles from '../styles/UserForm.module.css';
+import Link from 'next/link';
 
 export default function CreateUserhtmlForm() {
   return (
@@ -52,7 +53,10 @@ export default function CreateUserhtmlForm() {
           </button>
 
           <p className="text-center">
-            Already have an account? <a href="log-in.html">Log-in</a>
+            Already have an account?
+            <Link href="log-in.html">
+              <a>Log-in</a>
+            </Link>
           </p>
         </fieldset>
       </form>

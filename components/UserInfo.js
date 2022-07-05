@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function UserInfo() {
   return (
     <div>
@@ -14,9 +16,9 @@ export default function UserInfo() {
             <p>1,223</p>
           </div>
         </div>
-        <a href="../html/settings.html" className="vp-edit">
-          Edit Account
-        </a>
+        <Link href="../html/settings.html">
+          <a className="vp-edit">Edit Account</a>
+        </Link>
       </div>
     </div>
   );
