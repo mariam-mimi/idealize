@@ -11,7 +11,7 @@ export default function Header() {
           <a className={styles.navLogo}>Idealize</a>
         </Link>
         <ul className={styles.navList}>
-          <Link href="/">
+          <Link href="/posts/new">
             <a>
               <Image
                 src="/svg/plus-solid.svg"
@@ -36,7 +36,7 @@ export default function Header() {
             </a>
           </li>
 
-          <Link href="/">
+          <Link href="/notifications">
             <a>
               <Image
                 src="/svg/bell-solid.svg"
@@ -59,10 +59,10 @@ export default function Header() {
               />
 
               <div className={styles.dropdownContent} id="myDropdown">
-                <Link href="/">
+                <Link href="/profile">
                   <a>View Profile</a>
                 </Link>
-                <Link href="/">
+                <Link href="/profile/settings">
                   <a>Account Settings</a>
                 </Link>
                 <a href="#">Log-out</a>

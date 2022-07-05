@@ -16,7 +16,7 @@ export default function UserInfo() {
             <p>1,223</p>
           </div>
         </div>
-        <Link href="/">
+        <Link href="/profile/settings">
           <a className="vp-edit">Edit Account</a>
         </Link>
       </div>

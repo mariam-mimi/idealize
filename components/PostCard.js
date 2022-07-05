@@ -30,7 +30,7 @@ export default function PostCard() {
         fact that I can not spell. Yep. So just excuse me pls.
       </p>
       <div className="vfp-bookmark">
-        <Link href="/">
+        <Link href="/posts/1">
           <a className="vfp-btn">View full post</a>
         </Link>
         <a className="bookmark" id="book-svg">

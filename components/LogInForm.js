@@ -37,7 +37,7 @@ export default function LogInForm() {
 
           <span className={userFormStyles.formLine}></span>
 
-          <Link href="/">
+          <Link href="/register">
             <a role="button" className={userFormStyles.createAccountBtn}>
               Create new account
             </a>
