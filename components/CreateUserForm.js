@@ -54,7 +54,7 @@ export default function CreateUserhtmlForm() {
 
           <p className="text-center">
             Already have an account?
-            <Link href="log-in.html">
+            <Link href="/">
               <a>Log-in</a>
             </Link>
           </p>
