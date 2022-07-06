@@ -1,0 +1,33 @@
+.btn {
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--green-3);
+  color: var(--grey-1);
+  border-radius: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--green-1);
+  color: var(--grey-1);
+}
+
+.backToTop {
+  composes: btn;
+  background-color: #036c59;
+  border: none;
+  border-radius: 0;
+  padding: 10px;
+  margin: 100px 0 0 0;
+  width: 100%;
+}
+
+.backToTop:hover {
+  background-color: #036c59;
+}
+
+.loadMoreBtn {
+  composes: btn;
+  padding: 10px;
+}

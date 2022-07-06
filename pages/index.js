@@ -1,5 +1,4 @@
-import Head from 'next/head';
-import Image from 'next/image';
+import btnStyles from '../styles/Buttons.module.css';
 
 import SortedPostCardList from '../components/SortedPostCardList';
 
@@ -10,13 +9,13 @@ export default function Home() {
 
       {/* Load more posts */}
       <div className="text-center">
-        <a href="#" className="load-more">
+        <a href="#" className={btnStyles.loadMoreBtn}>
           Load more
         </a>
       </div>
 
       {/* Back to top */}
-      <button className="back-to-top">Back to top</button>
+      <button className={btnStyles.backToTop}>Back to top</button>
     </>
   );
 }

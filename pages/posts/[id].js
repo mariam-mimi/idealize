@@ -1,3 +1,5 @@
+import btnStyles from '../../styles/Buttons.module.css';
+
 import PostContent from '../../components/PostContent';
 import CommentList from '../../components/CommentList';
 
@@ -9,13 +11,13 @@ export default function PostDetailPage() {
 
       {/* Load more comments */}
       <div className="text-center">
-        <a href="#" className="load-more">
+        <a href="#" className={btnStyles.loadMoreBtn}>
           Load more
         </a>
       </div>
 
       {/* Back to top */}
-      <button className="back-to-top">Back to top</button>
+      <button className={btnStyles.backToTop}>Back to top</button>
     </>
   );
 }
