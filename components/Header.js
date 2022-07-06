@@ -11,18 +11,20 @@ export default function Header() {
           <a className={styles.navLogo}>Idealize</a>
         </Link>
         <ul className={styles.navList}>
-          <Link href="/posts/new">
-            <a>
-              <Image
-                src="/svg/plus-solid.svg"
-                alt="Plus icon"
-                className={styles.navSvg}
-                title="Create Post"
-                height={24}
-                width={24}
-              />
-            </a>
-          </Link>
+          <li>
+            <Link href="/posts/new">
+              <a>
+                <Image
+                  src="/svg/plus-solid.svg"
+                  alt="Plus icon"
+                  className={styles.navSvg}
+                  title="Create Post"
+                  height={24}
+                  width={24}
+                />
+              </a>
+            </Link>
+          </li>
 
           <li>
             <a href="https://github.com/" target="_blank" rel="noreferrer">
@@ -36,17 +38,19 @@ export default function Header() {
             </a>
           </li>
 
-          <Link href="/notifications">
-            <a>
-              <Image
-                src="/svg/bell-solid.svg"
-                alt="Notification bell icon"
-                className={styles.navSvg}
-                height={24}
-                width={24}
-              />
-            </a>
-          </Link>
+          <li>
+            <Link href="/notifications">
+              <a>
+                <Image
+                  src="/svg/bell-solid.svg"
+                  alt="Notification bell icon"
+                  className={styles.navSvg}
+                  height={24}
+                  width={24}
+                />
+              </a>
+            </Link>
+          </li>
 
           <li>
             <div className={styles.dropdown}>
