@@ -1,0 +1,86 @@
+.postCard {
+  background-color: white;
+  margin: 0px 24% 50px 24%;
+  padding: 20px 20px 30px 20px;
+  border-radius: 5px;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardHeader {
+  composes: flexCenter;
+}
+
+.postHeading {
+  composes: flexCenter;
+  justify-content: normal;
+}
+
+.postHeading h2 {
+  color: var(--grey-7);
+}
+
+.postHeading a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: var(--grey-7);
+}
+
+.postHeading a:hover {
+  color: var(--green-1);
+}
+
+.postText {
+  margin-top: 2px;
+  color: var(--grey-6);
+}
+
+.postRating {
+  display: flex;
+  flex-direction: row-reverse;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+}
+
+.postRating h3 {
+  margin-top: 0;
+}
+
+.postRating:hover {
+  color: var(--green-2);
+  filter: invert(57%) sepia(55%) saturate(508%) hue-rotate(118deg) brightness(88%) contrast(88%);
+}
+
+.cardFooter {
+  composes: flexCenter;
+  margin-top: 25px;
+}
+
+.bookmark {
+  height: 18px;
+  width: 18px;
+  margin-left: 10px;
+  padding: 0;
+  background-color: inherit;
+  border: none;
+  filter: invert(53%) sepia(42%) saturate(5930%) hue-rotate(139deg) brightness(91%) contrast(82%);
+}
+
+.detailBtn {
+  composes: btn from '../Buttons.module.css';
+  background-color: unset;
+  color: var(--green-3);
+  border: 2px solid var(--green-3);
+  padding: 5px;
+  font-size: 14px;
+}
+
+.detailBtn:hover {
+  color: var(--grey-1);
+  background-color: var(--green-3);
+}

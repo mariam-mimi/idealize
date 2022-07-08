@@ -13,21 +13,6 @@
   color: var(--grey-1);
 }
 
-.vfp-btn {
-  color: var(--green-3);
-  border: 2px solid var(--green-3);
-  padding: 5px;
-  border-radius: 30px;
-  font-size: 14px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.vfp-btn:hover {
-  color: var(--grey-1);
-  background-color: var(--green-3);
-}
-
 .create-post-btn {
   color: white;
   background-color: var(--green-3);

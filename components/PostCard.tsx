@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import styles from '../styles/components/PostCard.module.css';
+
 export interface Post {
   id: number;
   title: string;
@@ -19,14 +21,14 @@ interface PropTypes {
 
 export default function PostCard({ post }: PropTypes) {
   return (
-    <div className="post-card">
-      <div className="post-name-and-upvote post-top">
-        <div className="post-title-and-username">
+    <div className={styles.postCard}>
+      <div className={styles.cardHeader}>
+        <div className={styles.postHeading}>
           <h2>{post.title}</h2>
 
           <a href="#">{post.user.username}</a>
         </div>
-        <span className="vote">
+        <span className={styles.postRating}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={`/svg/heart-${post.isHearted ? 'solid' : 'regular'}.svg`}
@@ -38,12 +40,12 @@ export default function PostCard({ post }: PropTypes) {
           <h3 style={{ marginRight: '5px' }}>{post.heartCount}</h3>
         </span>
       </div>
-      <p className="post-p">{post.text}</p>
-      <div className="vfp-bookmark">
+      <p className={styles.postText}>{post.text}</p>
+      <div className={styles.cardFooter}>
         <Link href={`/posts/${post.id}`}>
-          <a className="vfp-btn">View full post</a>
+          <a className={styles.detailBtn}>View full post</a>
         </Link>
-        <a className="bookmark" id="book-svg">
+        <a className={styles.bookmark} id="book-svg">
           <Image
             src={`/svg/bookmark-${post.isBookmarked ? 'solid' : 'regular'}.svg`}
             alt="Bookmark icon"
