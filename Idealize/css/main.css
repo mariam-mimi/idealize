@@ -751,3 +751,121 @@ a {
 a:hover {
     color: var(--green-1);
 }
+
+/* --------------------------------------------------- Media Queries ------------------------------------------------- */
+
+@media only screen and (max-device-width: 540px) {
+    /* nav bar */
+    .nav-logo {
+        font-size: 85px;
+        text-align: center;
+    }
+    .nav-svg {
+        height: 55px;
+        width: 55px;
+        margin-left: 12px;
+    }
+    nav ul li {
+        margin-right: 74px;
+    }
+    /* body */
+    body {
+        padding-top: 130px;
+    }
+    /* ----- back to top ----- */
+    .back-to-top {
+        font-size: 35px;
+    }
+    /* ----- footer ----- */
+    footer {
+        flex-direction: column;
+    }
+
+    footer p {
+        font-size: 40px;
+    }
+
+    .middle-footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 35px;
+        border-top: 2px solid var(--grey-1);
+        border-bottom: 2px solid var(--grey-1);
+        border-left: none;
+        border-right: none;
+        padding: 50px 280px 50px 280px;
+        margin: 20px 20px;
+    }
+
+    .footer-svg {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .f-svg {
+        height: 60px;
+        width: 60px;
+        margin: 20px;
+    }
+    /* ----------------------- index.html ---------------------------- */
+    /* card styles */
+    h2 {
+        font-size: 55px;
+    }
+
+    .post-card {
+        margin: 0px 8% 50px 8%;
+        padding: 20px 40px 30px 40px;
+    }
+
+    .post-title-and-username a {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .vote {
+        font-size: 27px;
+    }
+
+    .vote img {
+        height: 42px;
+        width: 42px;
+    }
+
+    .vfp-btn {
+        font-size: 30px;
+        padding: 10px;
+        border: 3px solid var(--green-3);
+    }
+
+    .bookmark {
+        height: 42px;
+        width: 42px;
+    }
+
+    .load-more {
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+    }
+
+    /* sort by styles */
+    .sort-by {
+        margin: 0px 8% 50px 8%;
+    }
+
+    .sort-by h2 {
+        font-size: 45px;
+        margin: 15px 0px 15px 0px;
+    }
+
+    .ntc-a {
+        font-size: 35px;
+        margin-left: 20px;
+    }
+
+    .sb-svg {
+        height: 35px;
+        width: 35px;
+    }
+}
