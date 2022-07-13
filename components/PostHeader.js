@@ -1,16 +1,10 @@
-import type { Post } from "./PostCard";
-
-interface PropTypes {
-  post: Post;
-}
-
-export default function PostHeader({ post }: PropTypes) {
+export default function PostHeader() {
   return (
     <div className="post-name-and-upvote post-top">
       <div className="post-title-and-username">
-        <h1>{post.title}</h1>
+        <h1>Title of post</h1>
 
-        <a href="#">{post.user.username}</a>
+        <a href="#">Username123</a>
       </div>
       <span className="vote">
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -21,7 +15,7 @@ export default function PostHeader({ post }: PropTypes) {
           height="26"
         />
 
-        <h3 style={{ marginRight: '5px' }}>{post.heartCount}</h3>
+        <h3 style={{ marginRight: '5px' }}>5</h3>
       </span>
     </div>
   );

@@ -1,9 +1,5 @@
 import Link from 'next/link';
 
-interface PropTypes {
-  
-}
-
 export default function UserInfo() {
   return (
     <div>
