@@ -590,7 +590,6 @@ label {
 
   /* Add styles to the form container */
   .form-container {
-    max-width: 300px;
     width: 300px;
     height: 150px;
     margin-bottom: 50px;
@@ -629,6 +628,7 @@ label {
     background-color: var(--blue-4);
     color: var(--grey-1);
     border: none;
+    margin-right: 8px;
     border-radius: 4px;
     padding: 6px;
     cursor: pointer;
@@ -809,7 +809,6 @@ a:hover {
         margin: 20px;
     }
     /* ----------------------- index.html ---------------------------- */
-    /* card styles */
     h2 {
         font-size: 55px;
     }
@@ -820,8 +819,12 @@ a:hover {
     }
 
     .post-title-and-username a {
-        font-size: 30px;
+        font-size: 35px;
         margin-left: 20px;
+    }
+
+    .post-p {
+        font-size: 24px;
     }
 
     .vote {
@@ -842,6 +845,10 @@ a:hover {
     .bookmark {
         height: 42px;
         width: 42px;
+    }
+
+    .bookmark img {
+        margin-top: -6px;
     }
 
     .load-more {
@@ -867,5 +874,56 @@ a:hover {
     .sb-svg {
         height: 35px;
         width: 35px;
+    }
+    /* ------------------------------- view post styles -------------------------------- */
+    .comments {
+        font-size: 40px;
+        margin: 70px 8% 40px 8%;
+        padding: 20px 40px 30px 40px;
+    }
+
+    .comments a {
+        font-size: 30px;
+    }
+
+    .comments p.post-p {
+        margin-top: 4px;
+    }
+
+    .np-card {
+        margin: 15px 8% 50px 8%;
+        padding: 20px 40px 30px 40px;
+    }
+
+    /* reply button */
+    .reply-btn {
+        font-size: 35px;
+        margin-left: 8px;
+    }
+
+    .reply-btn-svg {
+        height: 38px;
+        width: 38px;
+    }
+    
+    .form-container {
+        width: 600px;
+        height: 216px;
+        margin-bottom: 570px;
+    }
+
+    .txt-area-comment {
+        font-size: 40px;
+        width: 558px;
+        padding: 22px;
+    }
+
+    .close-btn {
+        margin-right: 25px;
+    }
+
+    .close-btn,
+    .send-btn {
+        font-size: 35px;
     }
 }
