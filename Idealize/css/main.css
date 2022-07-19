@@ -51,11 +51,6 @@ body {
     border-radius: 5px;
 }
 
-.main-line {
-    border-bottom: 2px solid var(--grey-7);
-    padding-bottom: 2px;
-}
-
 .text-center {
     text-align: center;
 }
@@ -281,7 +276,7 @@ nav ul li {
 }
 
 .bookmark {
-    height: 18px;
+    height: 23px;
     width: 18px;
     margin-left: 10px;
     padding: 0;
@@ -415,6 +410,12 @@ label {
     background-color: var(--green-1);
 }
 
+.cp-h1 {
+    border-bottom: 2px solid var(--grey-7);
+    padding-bottom: 2px;
+    width: 190px;
+}
+
 /* ---------------------------------------------- notifications.html ---------------------------------------------------*/
 
 .noti-message {
@@ -443,6 +444,12 @@ label {
 
 .noti-load-more:hover {
     background-color: var(--green-1);
+}
+
+.noti-line {
+    border-bottom: 2px solid var(--grey-7);
+    padding-bottom: 2px;
+    width: 200px;
 }
 
 /* ---------------------------------------------- view-profile.html ----------------------------------------------- */
@@ -754,7 +761,7 @@ a:hover {
 
 /* --------------------------------------------------- Media Queries ------------------------------------------------- */
 
-@media only screen and (max-device-width: 540px) {
+@media only screen and (min-width: 540px) and (max-device-width: 768px) {
     /* nav bar */
     .nav-logo {
         font-size: 85px;
@@ -828,16 +835,17 @@ a:hover {
     }
 
     .vote {
-        font-size: 27px;
+        font-size: 40px;
     }
 
     .vote img {
-        height: 42px;
-        width: 42px;
+        height: 58px;
+        width: 50px;
     }
 
     .vfp-btn {
         font-size: 30px;
+        font-weight: bold;
         padding: 10px;
         border: 3px solid var(--green-3);
     }
@@ -858,7 +866,7 @@ a:hover {
 
     /* sort by styles */
     .sort-by {
-        margin: 0px 8% 50px 8%;
+        margin: 25px 8% 50px 8%;
     }
 
     .sort-by h2 {
@@ -891,7 +899,7 @@ a:hover {
     }
 
     .np-card {
-        margin: 15px 8% 50px 8%;
+        margin: 40px 8% 50px 8%;
         padding: 20px 40px 30px 40px;
     }
 
@@ -924,6 +932,57 @@ a:hover {
 
     .close-btn,
     .send-btn {
-        font-size: 35px;
+        font-size: 36px;
+        padding: 15px;
+        margin-top: 20px;
+        border-radius: 8px;
+    }
+    /* --------------------------- create post ------------------------------- */
+    .create-card {
+        margin: 50px 8% 230px 8%;
+        padding: 20px 40px 30px 40px;
+    }
+    .cp-h1 {
+        font-size: 60px;
+        border-bottom: 4px solid var(--grey-7);
+        padding-bottom: 2px;
+        width: 360px;
+    }
+    label {
+        font-size: 46px;
+    }
+    input[type="text"], 
+    textarea {
+        font-size: 40px;
+        border-color: var(--grey-5);
+    }
+    .create-post-btn {
+        font-size: 40px;
+        padding: 15px;
+        margin-top: 20px;
+        border-radius: 8px;
+    }
+
+    /* ---------------------- notification.html ---------------------- */
+    .card {
+        margin: 50px 8% 50px 8%;
+        padding: 20px 40px 30px 40px;
+    }
+
+    .noti-line {
+        font-size: 55px;
+        width: 100%;
+    }
+
+    .noti-message {
+        font-size: 30px;
+        border-bottom: 2px solid var(--grey-4);
+    }
+
+    .noti-load-more {
+        font-size: 28px;
+        padding: 12px;
+        margin-top: 25px;
+        border-radius: 8px;
     }
 }

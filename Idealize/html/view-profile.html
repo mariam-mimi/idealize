@@ -16,7 +16,7 @@
     </head>
 
     <body>
-        <!-------------------------------- nav bar --------------------------------------->
+        <!-- nav bar -->
         <header>
             <nav>
                 <a class="nav-logo" href="index.html">Idealize</a>
@@ -31,16 +31,16 @@
                     </li>  -->
                     <!--gihub link (img)-->
                     <li>
-                        <a href="https://github.com/mariam-mimi/idealize" target="_blank"><img src="../svg/github-brands.svg" class="nav-svg"></a>
+                        <a href="https://github.com/mariam-mimi/idealize" target="_blank"><img src="../svg/github-brands.svg" class="nav-svg" alt="Github logo"></a>
                     </li> 
                     <!--notifications bell-->
                     <li>
-                        <a href="notifications.html"><img src="../svg/bell-solid.svg" class="nav-svg"></a>
+                        <a href="notifications.html"><img src="../svg/bell-solid.svg" class="nav-svg" alt="Notification bell"></a>
                     </li> 
                     <!--pfp-->
                     <li>
                         <div class="dropdown">
-                            <img src="../svg/circle-user-solid.svg" class="nav-svg dropbtn" onclick="myFunction()">
+                            <img src="../svg/circle-user-solid.svg" class="nav-svg dropbtn" onclick="myFunction()" alt="Profile image">
                             <div class="dropdown-content" id="myDropdown">
                               <a href="../html/view-profile.html">View Profile</a>
                               <a href="../html/settings.html">Account Settings</a>
@@ -71,7 +71,7 @@
             </div>
           
 
-            <!------------------------------------- tab with user posts --------------------------------------->
+            <!-- tab with user posts -->
 
             <div>
                 <div class="tab">
@@ -90,11 +90,11 @@
                                 <a href="#">-Username123</a>
                             </div>
                             <span class="vote">
-                                <!-- upvote arrow -->
-                                <img src="../svg/heart-regular.svg" width="20" height="26" >
+                                <!-- upvote heart -->
+                                <img src="../svg/heart-regular.svg" width="20" height="26" alt="Upvote heart">
 
                                 <!-- upvote number -->
-                                <h3 style="margin-right: 5px;">5</h3>
+                                <span style="margin-right: 5px;">5</span>
                             </span>
                         </div>
                         <!-- text content of post -->
@@ -102,8 +102,8 @@
                         <!-- view full post -->
                         <div class="vfp-bookmark">
                             <a href="#" class="vfp-btn">View full post</a>
-                            <a class="bookmark" id="book-svg" onclick="bookmarkBtn()">
-                                <img src="../svg/bookmark-regular.svg">
+                            <a class="bookmark" onclick="bookmarkBtn()">
+                                <img src="../svg/bookmark-regular.svg" alt="Bookmark">
                             </a>
                         </div>            
                     </div>
@@ -117,11 +117,11 @@
                                 <a href="#">-Username123</a>
                             </div>
                             <span class="vote">
-                                <!-- upvote arrow -->
-                                <img src="../svg/heart-regular.svg" width="20" height="26" >
+                                <!-- upvote heart -->
+                                <img src="../svg/heart-regular.svg" width="20" height="26" alt="Upvote heart">
 
                                 <!-- upvote number -->
-                                <h3 style="margin-right: 5px;">5</h3>
+                                <span style="margin-right: 5px;">5</span>
                             </span>
                         </div>
                         <!-- text content of post -->
@@ -129,8 +129,8 @@
                         <!-- view full post -->
                         <div class="vfp-bookmark">
                             <a href="#" class="vfp-btn">View full post</a>
-                            <a class="bookmark" id="book-svg" onclick="bookmarkBtn()">
-                                <img src="../svg/bookmark-regular.svg">
+                            <a class="bookmark" onclick="bookmarkBtn()">
+                                <img src="../svg/bookmark-regular.svg" alt="Bookmark">
                             </a>
                         </div>           
                     </div>
@@ -141,7 +141,7 @@
                     </div>
                 </div>
 
-                <!-------------- saved posts -------------->
+                <!-- saved posts -->
 
                 <div id="s-p" class="tabcontent">
                     <div class="vp-post-card">
@@ -154,11 +154,11 @@
                                 <a href="#">-Username123</a>
                             </div>
                             <span class="vote">
-                                <!-- upvote arrow -->
-                                <img src="../svg/heart-regular.svg" width="20" height="26" >
+                                <!-- upvote heart -->
+                                <img src="../svg/heart-regular.svg" width="20" height="26" alt="Upvote heart">
 
                                 <!-- upvote number -->
-                                <h3 style="margin-right: 5px;">5</h3>
+                                <span style="margin-right: 5px;">5</span>
                             </span>
                         </div>
                         <!-- text content of post -->
@@ -166,8 +166,8 @@
                         <!-- view full post -->
                         <div class="vfp-bookmark">
                             <a href="#" class="vfp-btn">View full post</a>
-                            <a class="bookmark" id="book-svg" onclick="bookmarkBtn()">
-                                <img src="../svg/bookmark-solid.svg">
+                            <a class="bookmark" onclick="bookmarkBtn()">
+                                <img src="../svg/bookmark-solid.svg" alt="Bookmark">
                             </a>
                         </div>              
                     </div>
@@ -186,20 +186,21 @@
         
         <!-- Back to top button -->
         <button class="back-to-top" onclick="backToTop()">Back to top</button>
+
+        <footer>
+            <div>
+                <h1 class="footer-text nav-logo">Idealize</h1>
+                <p class="footer-text">Some text about the app and stuff.</p>
+            </div>
+            <div class="middle-footer">
+                <a href="#" class="footer-text">Terms and Conditions</a><br>
+                <a href="#" class="footer-text">Privacy Policy</a><br>
+                <a href="#" class="footer-text">About</a>
+            </div>
+            <div class="footer-svg">
+                <a href="https://github.com/" target="_blank"><img src="../svg/github-brands.svg" height="30" width="30" class="f-svg" alt="Github logo"></a><br>
+                <a href="https://wvcoding.org/" target="_blank"><img src="../svg/wvcc-logo.svg" height="30" width="30" class="f-svg" title="West Virginia Coding Club"></a>
+            </div>
+        </footer>
     </body>
-    <footer>
-        <div>
-            <h1 class="footer-text nav-logo">Idealize</h1>
-            <p class="footer-text">Some text about the app and stuff.</p>
-        </div>
-        <div class="middle-footer">
-            <a href="#" class="footer-text">Terms and Conditions</a><br>
-            <a href="#" class="footer-text">Privacy Policy</a><br>
-            <a href="#" class="footer-text">About</a>
-        </div>
-        <div class="footer-svg">
-            <a href="https://github.com/" target="_blank"><img src="../svg/github-brands.svg" height="30px" width="30px"></a><br>
-            <a href="https://wvcoding.org/" target="_blank"><img src="../svg/wvcc-logo.svg" height="30px" width="30px" title="West Virginia Coding Club"></a>
-        </div>
-    </footer>
 </html>
