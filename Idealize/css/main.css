@@ -293,7 +293,7 @@ nav ul li {
 .vfp-btn {
     color: var(--green-3);
     border: 2px solid var(--green-3);
-    padding: 5px;
+    padding: 6px;
     border-radius: 30px;
     font-size: 14px;
     text-decoration: none;
@@ -511,6 +511,7 @@ label {
   /* Style the buttons inside the tab */
   .tab button {
     background-color: white;
+    color: var(--grey-7);
     float: left;
     border: none;
     outline: none;
@@ -595,16 +596,16 @@ label {
     z-index: 9;
   }
 
-  /* Add styles to the form container */
-  .form-container {
+/* Add styles to the form container */
+.form-container {
     width: 300px;
-    height: 150px;
+    height: 200px;
     margin-bottom: 50px;
-    padding: 80px;
+    padding: 75px;
     color: var(--grey-7);
     background-color: white;
     box-shadow: 0px 1px 4px 4px rgb(0 0 0 / 6%);
-  }
+}
 
 .txt-area-comment {
     width: 283px;
@@ -875,7 +876,7 @@ a:hover {
     }
 
     .ntc-a {
-        font-size: 35px;
+        font-size: 42px;
         margin-left: 20px;
     }
 
@@ -984,5 +985,41 @@ a:hover {
         padding: 12px;
         margin-top: 25px;
         border-radius: 8px;
+    }
+    /* --------------------- drop down --------------------- */
+    .dropdown-content {
+        width: 380px;
+        height: 340px;
+    }
+    .dropdown-content a {
+        font-size: 40px;
+        padding: 20px;
+    }
+    .dropdown-content:after {
+        margin-left: 163px;
+        top: 1px;
+    }
+    /* --------------------- view profile --------------------- */
+    .vp-div {
+        flex-direction: column;
+    }
+    .vp-user-box {
+        margin-bottom: 70px;
+        font-size: 30px;
+        margin: 24px 8% 70px 8%;
+    }
+    .vp-user-box h1 {
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    .vp-post-point-div {
+        font-size: 38px;
+    }
+    .vp-edit {
+        font-size: 38px;
+    }
+    .tab button {
+        font-size: 40px;
+        margin-bottom: 10px;
     }
 }
