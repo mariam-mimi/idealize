@@ -235,6 +235,11 @@ nav ul li {
 .post-p {
     margin-top: 2px;
     color: var(--grey-6);
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
 }
 
 .post-title-and-username {
@@ -262,7 +267,7 @@ nav ul li {
     cursor: pointer;
     text-align: center;
     font-size: 15px;
-} 
+}
 
 .vote h3 {
     margin-top: 0px;
@@ -832,7 +837,7 @@ a:hover {
     }
 
     .post-p {
-        font-size: 24px;
+        font-size: 14px;
     }
 
     .vote {
@@ -841,14 +846,19 @@ a:hover {
 
     .vote img {
         height: 58px;
-        width: 50px;
+        width: 38px;
     }
 
     .vfp-btn {
-        font-size: 30px;
+        font-size: 28px;
         font-weight: bold;
+        margin-top: 6px;
         padding: 10px;
         border: 3px solid var(--green-3);
+    }
+
+    .post-name-and-upvote {
+        height: 140px;
     }
 
     .bookmark {
@@ -861,7 +871,7 @@ a:hover {
     }
 
     .load-more {
-        font-size: 14px;
+        font-size: 12px;
         padding: 10px 20px 10px 20px;
     }
 
@@ -885,6 +895,10 @@ a:hover {
         width: 35px;
     }
     /* ------------------------------- view post styles -------------------------------- */
+    .vp-post-card {
+        padding: 20px 30px 30px 30px;
+    }
+
     .comments {
         font-size: 40px;
         margin: 70px 8% 40px 8%;
@@ -952,13 +966,13 @@ a:hover {
     label {
         font-size: 46px;
     }
-    input[type="text"], 
+    input[type="text"], input[type="email"], input[type="password"],
     textarea {
         font-size: 40px;
         border-color: var(--grey-5);
     }
     .create-post-btn {
-        font-size: 40px;
+        font-size: 34px;
         padding: 15px;
         margin-top: 20px;
         border-radius: 8px;
@@ -1019,7 +1033,14 @@ a:hover {
         font-size: 38px;
     }
     .tab button {
-        font-size: 40px;
+        font-size: 44px;
+        padding: 22px;
         margin-bottom: 10px;
+    }
+    /*------------------------- settings.html ----------------------*/
+    .save-changes-btn {
+        font-size: 34px;
+        margin-top: 22px;
+        padding: 15px;
     }
 }
